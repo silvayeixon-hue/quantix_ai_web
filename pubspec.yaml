@@ -1,0 +1,29 @@
+name: quantix_ia
+description: "Quantix AI Trading App - Professional Engine"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Librería esencial para los gráficos de TradingView en Web
+  easy_web_view: ^2.0.1
+  
+  # Evita que los menús de Flutter se queden "detrás" del gráfico
+  pointer_interceptor: ^0.10.1+1
+  
+  # Motor de conexión para las señales de Binance (EMAs, MACD, RSI)
+  # Nota: Usamos la 1.1.0 o superior para estabilidad en peticiones asíncronas
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
